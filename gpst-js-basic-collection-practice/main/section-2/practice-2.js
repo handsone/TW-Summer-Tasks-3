@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function countSameElements(collection) {
 	var answer = [];
 	var Position ;
@@ -9,7 +7,7 @@ module.exports = function countSameElements(collection) {
 		Position = WordsArray.indexOf(A);
 		if (Position === -1){
 			WordsArray.push(A[0]);
-			if (A.length != 1){
+			if (A.length !== 1){
 			WordsFrequency.push(Number(A.match(/\d+/)));
 			}
 			else {
@@ -17,7 +15,7 @@ module.exports = function countSameElements(collection) {
 			}
 		}
 		else{
-			if (A.length != 1){
+			if (A.length !== 1){
 				WordsFrequency[Position] += Number(A.match(/\d+/));
 			}
 			else {
@@ -30,4 +28,4 @@ module.exports = function countSameElements(collection) {
 		answer.push({key: WordsArray[i], count: WordsFrequency[i]});
 	}
 	return answer ;
-}
+};

@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function collectSameElements(collectionA, collectionB) {
 	var answer  = [];
 	for ( var A of collectionA ){
@@ -10,4 +8,4 @@ module.exports = function collectSameElements(collectionA, collectionB) {
 		}
 	}
 	return answer ;
-}
+};

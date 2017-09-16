@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = function countSameElements(collection) {
 	var answer = [] ;
 	var WordsArray = [] ;
@@ -19,4 +17,4 @@ module.exports = function countSameElements(collection) {
 		answer.push({key: WordsArray[i], count: WordsFrequency[i]});
 	}
 	return answer ;
-}
+};

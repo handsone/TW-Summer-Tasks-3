@@ -19,7 +19,7 @@ module.exports = function createUpdatedCollection(collectionA, objectB) {
 		ArrayC.push({key: WordsArray[i], count: WordsFrequency[i]});
 	}
 
-	for ( var A of ArrayC ){
+	for ( let  A of ArrayC ){
 		for (var B of objectB.value){
 			if (A.key === B){
 				A.count -= parseInt(A.count /3);
@@ -27,4 +27,4 @@ module.exports = function createUpdatedCollection(collectionA, objectB) {
 		}
 	}
 	return ArrayC ;
-}
+};
